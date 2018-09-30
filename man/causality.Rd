@@ -8,7 +8,8 @@
 
 \description{
   Computes the test statistics for Granger- and Instantaneous causality
-  for a VAR(p). 
+  for a VAR(p). This was installed from cheaton/vars2 and produces a different
+  denominator degrees of freedom to the version at https://cran.r-project.org/web/packages/vars/index.html.
 }
 
 \usage{
@@ -48,8 +49,8 @@ causality(x, cause = NULL, vcov.=NULL, boot=FALSE, boot.runs=100)
   \eqn{\bold{\alpha}_{21, i} = 0} for \eqn{i = 1, 2, \ldots, p}. The
   alternative is: \eqn{\exists \; \bold{\alpha}_{21,i} \ne 0} for \eqn{i =
     1, 2, \ldots, p}. The test statistic is distributed as \eqn{F(p K_1
-    K_2, KT - n^*)}, with \eqn{n^*} equal to the total number of
-  parameters in the above VAR(p) (including deterministic
+    K_2, T - n^*)}, with \eqn{n^*} equal to the total number of
+  parameters in the single equation from the VAR(p) (including deterministic
   regressors).\cr
   The null hypothesis for instantaneous causality is defined as:
   \eqn{H_0: C \bold{\sigma} = 0}, where \eqn{C} is a \eqn{(N \times K(K
@@ -70,7 +71,7 @@ causality(x, cause = NULL, vcov.=NULL, boot=FALSE, boot.runs=100)
   test statistic \eqn{\lambda_W} is asymptotically distributed as
   \eqn{\chi^2(N)}.
   
-  Fot the Granger causality test, a robust covariance-matrix estimator can be 
+  For the Granger causality test, a robust covariance-matrix estimator can be 
   used in case of heteroskedasticity through argument \code{vcov.} It can be either a pre-computed matrix or
   a function for extracting the covariance matrix. See \code{\link[sandwich]{vcovHC}}
   from package \pkg{sandwich} for further details. 
@@ -94,7 +95,7 @@ causality(x, cause = NULL, vcov.=NULL, boot=FALSE, boot.runs=100)
   hypothesis.  
 }
 
-\author{Bernhard Pfaff}
+\author{Bernhard Pfaff, denominator degrees of freedom fixed by Chris Heaton.}
 
 \references{
   Granger, C. W. J. (1969), Investigating causal relations by
