@@ -1,4 +1,4 @@
-cebe6d9ae7bc0385701464b630148d53 *DESCRIPTION
+bfae9c4f2b47f2c7ef2b34824602356e *DESCRIPTION
 1dc27517125be99c361e1c4224b48ed6 *NAMESPACE
 4dd92ec7a5f91376739a24037d027539 *R/A.R
 eacc82322f1491f6342045ddf0e1398b *R/B.R
@@ -139,7 +139,7 @@ efa70aa743a85cf2373dc92cda0aac96 *inst/doc/vars.R
 abfb9e15a605bacbf560a6e3d8836e27 *man/VAR.Rd
 f18f0d02cbffe6f4680a5d8236ced8a6 *man/VARselect.Rd
 5debcf3f7e6cb19cc611e89c9f3723ce *man/arch.Rd
-354216bc90065f602375a87d5a87d1df *man/causality.Rd
+183f94612faea126cf80b4ae7828697a *man/causality.Rd
 bd58f4b01d4fc2a4029b219da5729a22 *man/coefficients.Rd
 f8468747a7b8f5bfcd339158a3972a6e *man/fanchart.Rd
 b5f8815af35c96576ae49858968a7eac *man/fevd.Rd
